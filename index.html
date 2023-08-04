@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+     <!--UNICONS-->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
     <title>Jus'çhillin</title>
 </head>
 <body>
@@ -13,25 +15,24 @@
     <div class="header container">
         <div class="nav-bar">
             <div class="brand">
-               <a href="#hero"> <img  src="./img/logo.png" class="logo" alt="logo" style="width:300px;height:80px;"></a>
+               <a href="#home"> <img  src="./img/logo.png" class="logo" alt="logo" style="width:300px;height:80px;"></a>
             </div>
             <div class="nav-list">
                 <div class="hamburger"><div class="bar"></div></div>
                 <ul>
-                    <li><a href="#hero" data-after="Home">Home</a></li>
+                    <li><a href="#home" data-after="Home">Home</a></li>
                     <li><a href="#projects" data-after="Services">Services</a></li>
                     <li><a href="#about" data-after="About">About Us</a></li>
-                    <li> <a href="#sign up" data-after="Register">Sign Up </a></li>
-                    <li> <a href="#sign in" data-after="Login">Sign In</a></li>
+                    <li> <a href="#home"  id="form_open" class="signinBtn" data-after="Login">Sign In</a></li>
                 </ul>
+                
             </div>
         </div>
-    </div>
 </section>
 
 <!--Headersection ends-->
     <!--First section starts-->
-    <section id="hero">
+    <section id="home" class="home">
         <div class="hero container">
             <div>
                 <h1>Jus'chillin?<span></span></h1>
@@ -39,8 +40,70 @@
                 <h1>On Our App<span></span></h1>
                 <a href="#about" class="cta" name="cta" type="button">About Us</a>
             </div>
+        </div>  
+        <div class="form_container">
+            <i class="uil uil-times form_close"></i>
+            <!--LOGIN FORM-->
+            <div class="form login_form">
+                <form action="#">
+                    <h2>Login</h2>
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email">
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Enter your password">
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash  pwhide"></i>
+                    </div>
+                    <div class="option_field">
+                        <span class="checkbox">
+                            <input type="checkbox" id="check">
+                            <label for="check">Remember me</label>
+                        </span>
+                        <a href="#" class="forgot_pw">Forgot password?</a>
+                    </div>
+                    <button class="button">Login Now</button>
+                    <div class="login_signup">
+                       <b> Don't have an account? <a href="#" id="signup">Sign up</a></b>
+                    </div>
+                </form>
+            </div>
+    
+            <!--Sign up page-->
+            <div class="form sign_form">
+                <form action="#">
+                    <h2>Sign Up</h2>
+                    <div class="input_box">
+                        <input type="email" placeholder="Enter your email">
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" placeholder="Enter your name">
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" placeholder="Enter your surname">
+                        <i class="uil uil-envelope-alt email"></i>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" placeholder="Create your password">
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash  pwhide"></i>
+                    </div> <div class="input_box">
+                        <input type="password" placeholder="Confirm your password">
+                        <i class="uil uil-lock password"></i>
+                        <i class="uil uil-eye-slash  pwhide"></i>
+                    </div>
+                   
+                    <button class="button">Sign Up</button>
+                    <div class="login_signup">
+                    <b> Already have an account? <a href="#" id="login">Login</a></b>
+                    </div>
+                </form>
+            </div>
         </div>
-    </section>
+      </section>
     <!--First section ends-->
        <!--recents section starts-->
 <section id="projects">
@@ -78,7 +141,7 @@
           </div>
           <div class="projects-item">
             <div class="project-info">
-            <h1>Register As Custumer</h1>
+            <h1>Register As Customer</h1>
             <h2>Coding is love</h2>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -116,7 +179,7 @@
             </div>
           </section>
           <!--about me  section ends-->
-     
+        
            <!--footer section starts-->
            <section id="footer">
             <div class="footer container">
@@ -133,11 +196,13 @@
                     </div>
                  
                     </div>
+                    <p>Copyright © 2023 Jus'chillin. All rights reserved</p>
                 </div>
-                <p>Copyright © 2023 Jus'chillin. All rights reserved</p>
-                <p>Copyright © 2023 Thwala. All rights reserved</p>
+                
             </div>
            </section>
+           
+          
             <!--footer  section ends-->
             <script src="./app.js"></script>
 </body>
